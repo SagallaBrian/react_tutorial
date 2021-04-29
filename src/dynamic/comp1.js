@@ -16,11 +16,11 @@ class MyComponentone extends Component {
         }
 
         return (
-            <div id="mydiv">
+            <div>
                 <h2 style={{ color: '#e437a1' }}> Welcome to {mytitle}</h2>
                 <p style={divStyle}> {myuser} </p>
                 <p>
-                    <img src={apiimage} alt="Komplab Api Images" id="styleimage" />
+                    <img src={apiimage} alt="Komplab Api Images" className="img-fluid" />
                 </p>
                 <p>
                     <a href={mylink}> Link</a>

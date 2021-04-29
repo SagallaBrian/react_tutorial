@@ -1,9 +1,9 @@
 import { Component, Fragment} from "react";
 
 class Myevenetlistn extends Component {
-    constructor(props) {
-        super(props);
-    }
+    // constructor(props) {
+    //     super(props);
+    // }
 
     render() {
         return (

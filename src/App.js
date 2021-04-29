@@ -1,25 +1,27 @@
 import './App.css';
-import Compone from './components/comp1';
-import Comptwo from './components/comp2';
+import Home from './home/homepg';
+import Navbar from './home/navbar';
+import Dynamic from './dynamic/dynamic'
 import Listimp from './list/lists';
 import Pasaram from './passingparams/passparam';
 import Paspram2 from './passingparam2/params2';
 import Hooks from './hooks/hooks';
 import LifeCycle from './lifecyle/cycle';
 import Eventlis from './eventlistner/eventlist'
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
 	return (
 		<Router>
 
-			<div className="App">
+			<div className="container-lg py-5">
+				<Navbar />
 
 				<Switch>
+					<Route path="/"  component={Home}  exact />
 					<Route path="/tut1" exact>
-						<Compone myuser="Eunice" />
-						<Comptwo myuser="Brian" />
-
+						<Dynamic />
 					</Route>
 					<Route path="/tut2" exact>
 						<Listimp />
